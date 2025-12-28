@@ -30,4 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('fade-in-section');
         observer.observe(el);
     });
+
+    // Footer links handling
+    const datenschutzLink = document.getElementById('link-datenschutz');
+    const impressumLink = document.getElementById('link-impressum');
+    const kontaktLink = document.getElementById('link-kontakt');
+
+    if (datenschutzLink) {
+        datenschutzLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Datenschutz:\n\nDeine Daten werden nur lokal in deinem Browser gespeichert und verlassen nie deinen Computer. Wir erheben keine personenbezogenen Daten.');
+        });
+    }
+
+    if (impressumLink) {
+        impressumLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Unter Bearbeitung');
+        });
+    }
+
+    if (kontaktLink) {
+        kontaktLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = 'mailto:Minoshekk@gmail.com';
+        });
+    }
 });
