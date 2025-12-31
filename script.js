@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (datenschutzLink) {
         datenschutzLink.addEventListener('click', (e) => {
             e.preventDefault();
-            alert('Datenschutz:\n\nDeine Daten werden nur lokal in deinem Browser gespeichert und verlassen nie deinen Computer. Wir erheben keine personenbezogenen Daten.');
+            alert('Datenschutz bei Panum-Grades:\n\nWir nehmen Datenschutz ernst. Panum agiert ausschließlich lokal in deinem Browser. Es werden keinerlei persönliche Daten (Noten, Namen, Logins) an externe Server gesendet oder gespeichert. Es findet kein Tracking statt.');
         });
     }
 
     if (impressumLink) {
         impressumLink.addEventListener('click', (e) => {
             e.preventDefault();
-            alert('Unter Bearbeitung');
+            alert('Panum Project\nEntwickelt von Minoshek Kishokumar\nKontakt: Minoshekk@gmail.com\n\nPanum ist ein Open-Source Projekt.');
         });
     }
 
